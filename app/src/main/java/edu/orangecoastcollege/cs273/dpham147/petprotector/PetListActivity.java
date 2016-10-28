@@ -152,9 +152,9 @@ public class PetListActivity extends AppCompatActivity {
             petListAdapter.notifyDataSetChanged();
         }
 
-        nameEditText.setText("");
-        detailEditText.setText("");
-        phoneEditText.setText("");
+        nameEditText.setText(R.string.name);
+        detailEditText.setText(R.string.details);
+        phoneEditText.setText(R.string.phone_number);
         imageURI = getUriToResource(this, R.drawable.none);
         petImageView.setImageURI(imageURI);
     }

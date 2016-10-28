@@ -36,7 +36,8 @@
         android:inputType="textPersonName"
         android:text="@string/name"
         android:ems="10"
-        android:id="@+id/nameEditText" />
+        android:id="@+id/nameEditText"
+        android:selectAllOnFocus="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -44,7 +45,8 @@
         android:inputType="textPersonName"
         android:text="@string/details"
         android:ems="10"
-        android:id="@+id/detailEditText" />
+        android:id="@+id/detailEditText"
+        android:selectAllOnFocus="true" />
 
     <EditText
         android:layout_width="match_parent"
@@ -52,7 +54,8 @@
         android:inputType="textPersonName"
         android:text="@string/phone_number"
         android:ems="10"
-        android:id="@+id/phoneEditText" />
+        android:id="@+id/phoneEditText"
+        android:selectAllOnFocus="true" />
 
     <Button
         android:text="@string/add_button_text"
