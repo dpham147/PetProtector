@@ -27,6 +27,10 @@ public class Pet {
         mImageURI = imageURI;
     }
 
+    public Pet(String name, String details, String phone, Uri imageURI) {
+        this(-1, name, details, phone, imageURI);
+    }
+
     public int getId()
     {
         return mId;

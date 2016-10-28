@@ -2,13 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal" android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:id="@+id/petListLinearLayout">
 
     <ImageView
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         app:srcCompat="@mipmap/ic_launcher"
-        android:id="@+id/imageView3"
+        android:id="@+id/petListImageView"
         android:layout_weight="1"
         android:adjustViewBounds="true"
         android:scaleType="fitCenter" />
@@ -23,13 +24,13 @@
             android:text="TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/petNameTextView"
+            android:id="@+id/petListNameTextView"
             android:textSize="24sp" />
 
         <TextView
             android:text="TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/descTextView" />
+            android:id="@+id/petListDetailsTextView" />
     </LinearLayout>
 </LinearLayout>
