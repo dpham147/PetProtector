@@ -147,7 +147,9 @@ public class PetListActivity extends AppCompatActivity {
         }
         else {
             Pet newPet = new Pet(name, details, phone, imageURI);
+            db.addPet(newPet);
             petList.add(newPet);
+            petListAdapter.notifyDataSetChanged();
         }
 
         nameEditText.setText("");

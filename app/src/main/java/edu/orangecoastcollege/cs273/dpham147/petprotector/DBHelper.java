@@ -31,12 +31,12 @@ public class DBHelper extends SQLiteOpenHelper {
 
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String table = "CREATE TABLE" + DATABASE_TABLE + "(" +
+        String table = "CREATE TABLE " + DATABASE_TABLE + "(" +
                 KEY_FIELD_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, " +
                 FIELD_NAME + " TEXT, " +
                 FIELD_DETAILS + " TEXT, " +
                 FIELD_PHONE + " TEXT, " +
-                FIELD_IMAGE_URI + " TEXT, " + ")";
+                FIELD_IMAGE_URI + " TEXT" + ")";
         db.execSQL(table);
     }
 
