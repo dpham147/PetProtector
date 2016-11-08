@@ -34,28 +34,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/name"
         android:ems="10"
         android:id="@+id/nameEditText"
-        android:selectAllOnFocus="true" />
+        android:selectAllOnFocus="true"
+        android:hint="@string/name" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/details"
         android:ems="10"
         android:id="@+id/detailEditText"
-        android:selectAllOnFocus="true" />
+        android:selectAllOnFocus="true"
+        android:hint="@string/details" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPersonName"
-        android:text="@string/phone_number"
         android:ems="10"
         android:id="@+id/phoneEditText"
-        android:selectAllOnFocus="true" />
+        android:selectAllOnFocus="true"
+        android:hint="@string/phone_number" />
 
     <Button
         android:text="@string/add_button_text"

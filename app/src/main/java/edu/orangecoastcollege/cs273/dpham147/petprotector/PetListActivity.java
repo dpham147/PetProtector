@@ -17,6 +17,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -152,16 +153,17 @@ public class PetListActivity extends AppCompatActivity {
             petListAdapter.notifyDataSetChanged();
         }
 
-        nameEditText.setText(R.string.name);
-        detailEditText.setText(R.string.details);
-        phoneEditText.setText(R.string.phone_number);
+        nameEditText.setText("");
+        detailEditText.setText("");
+        phoneEditText.setText("");
         imageURI = getUriToResource(this, R.drawable.none);
         petImageView.setImageURI(imageURI);
     }
 
     public void viewPetDetails(View view)
     {
-        Pet selectedPet = (Pet) petsListView.getTag();
+        LinearLayout selectedItem = (LinearLayout) view;
+        Pet selectedPet = (Pet) selectedItem.getTag();
         Intent toDetails = new Intent(this, PetDetailsActivity.class);
         toDetails.putExtra("Name", selectedPet.getName());
         toDetails.putExtra("Details", selectedPet.getDetails());
